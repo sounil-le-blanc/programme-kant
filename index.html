@@ -24,7 +24,6 @@
 
 <body class="bg-stone-50/60 text-stone-900 font-sans antialiased">
 
-  <!-- TOP BAR & NAVIGATION INSTITUTIONNELLE -->
   <nav class="bg-white border-b border-stone-200 sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
       <div class="flex items-center space-x-3">
@@ -39,7 +38,6 @@
     </div>
   </nav>
 
-  <!-- HERO SECTION INSTITUTIONNELLE -->
   <header id="vision" class="bg-white border-b border-stone-200 py-24 px-6 relative">
     <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-blue-600 via-white to-red-600"></div>
     <div class="max-w-4xl mx-auto space-y-8 text-center">
@@ -53,7 +51,7 @@
       <div class="w-16 h-0.5 bg-red-600 mx-auto"></div>
       <p class="text-xl text-stone-600 max-w-3xl mx-auto font-light leading-relaxed">
         Une modélisation systémique des activités humaines au service des Valeurs de la République et de l'émergence de
-        la Cité des Sciences et des Arts[cite: 2].
+        la Cité des Sciences et des Arts.
       </p>
       <div class="pt-4">
         <a href="methode.html"
@@ -64,35 +62,32 @@
     </div>
   </header>
 
-  <!-- INTRO & FONDEMENT PHILOSOPHIQUE -->
   <section class="max-w-5xl mx-auto py-20 px-6 bg-transparent">
     <div class="grid md:grid-cols-3 gap-12 items-start">
       <div class="md:col-span-2 space-y-6">
         <h2 class="text-2xl font-bold tracking-tight text-stone-900">Un paradigme de gouvernance : La Démognotie</h2>
         <p class="text-stone-600 text-sm leading-relaxed">
-          Issu des Ateliers d'Expression Citoyenne[cite: 1, 2], le <strong>Programme KANT</strong> constitue un outil
-          structurel d'observation, de compréhension et de déploiement public[cite: 2]. Il conceptualise la transition
-          vers un modèle <em>démognostique</em>[cite: 2].
+          Issu des Ateliers d'Expression Citoyenne, le <strong>Programme KANT</strong> constitue un outil structurel
+          d'observation, de compréhension et de déploiement public. Il conceptualise la transition vers un modèle
+          <em>démognostique</em>.
         </p>
         <p class="text-stone-600 text-sm leading-relaxed">
           Ce système postule que la justice politique naît lorsque la connaissance et la compréhension éclairée des
           mécanismes sociaux, économiques et humains cessent d'être le privilège d'une élite pour devenir une condition
-          commune et transparente, partagée sans rupture cognitive entre le peuple et les instances dirigeantes[cite:
-          2].
+          commune et transparente, partagée sans rupture cognitive entre le peuple et les instances dirigeantes.
         </p>
       </div>
       <div class="bg-white p-6 border border-stone-200 shadow-2xs space-y-4">
         <p class="text-[10px] font-bold uppercase tracking-widest text-stone-400">Directive Principielle</p>
         <p class="text-xs italic text-stone-700 leading-relaxed">
           "Trouver une forme d'association qui défende et protège de toute la force commune la personne et les biens de
-          chaque associé..."[cite: 2]
+          chaque associé..."
         </p>
-        <p class="text-[10px] font-semibold text-stone-500">— Jean-Jacques Rousseau, 1762[cite: 2]</p>
+        <p class="text-[10px] font-semibold text-stone-500">— Jean-Jacques Rousseau, 1762</p>
       </div>
     </div>
   </section>
 
-  <!-- SECTION TECHNIQUE : L'HEXAGONE INTERACTIF -->
   <section id="methode" class="bg-stone-900 text-white py-24 px-6 border-t border-b border-stone-950">
     <div class="max-w-6xl mx-auto space-y-16">
 
@@ -100,45 +95,35 @@
         <h2 class="text-3xl font-light tracking-tight">L'Organisation en <span
             class="font-bold text-red-500">Atelier</span></h2>
         <p class="text-stone-400 max-w-2xl mx-auto text-xs leading-relaxed">
-          L'Atelier désigne le cadre spatio-temporel d'exercice de toute activité humaine[cite: 2]. Explorez ci-dessous
-          les six valeurs-principes synchroniques qui structurent cet équilibre[cite: 2].
+          L'Atelier désigne le cadre spatio-temporel d'exercice de toute activité humaine. Explorez ci-dessous les six
+          valeurs-principes synchroniques qui structurent cet équilibre.
         </p>
       </div>
 
-      <!-- CONTENEUR DE L'INTERACTION -->
       <div class="grid lg:grid-cols-12 gap-12 items-center">
 
-        <!-- GAUCHE : L'Hexagone SVG (Structure Épurée) -->
         <div class="lg:col-span-5 flex justify-center">
           <div
             class="relative w-full max-w-[340px] aspect-square bg-stone-950/40 p-6 border border-stone-800 shadow-inner">
             <svg viewBox="0 0 400 400" class="w-full h-full">
-              <!-- Côté Haut-Gauche (Orange) : Conservation -->
               <polygon id="side-orange" onclick="selectSide('orange')" class="hexagon-btn text-orange-500 fill-current"
                 points="200,20 61,100 81,135 200,66" />
-              <!-- Côté Haut-Droit (Jaune) : Laïcité -->
               <polygon id="side-yellow" onclick="selectSide('yellow')" class="hexagon-btn text-amber-400 fill-current"
                 points="200,20 339,100 319,135 200,66" />
-              <!-- Côté Droit (Vert) : Fraternité -->
               <polygon id="side-green" onclick="selectSide('green')" class="hexagon-btn text-green-500 fill-current"
                 points="339,100 339,300 300,277 300,123" />
-              <!-- Côté Bas-Droit (Bleu) : Égalité -->
               <polygon id="side-blue" onclick="selectSide('blue')" class="hexagon-btn text-blue-600 fill-current"
                 points="339,300 200,380 200,334 300,277" />
-              <!-- Côté Bas-Gauche (Violet) : Harmonie -->
               <polygon id="side-purple" onclick="selectSide('purple')" class="hexagon-btn text-purple-600 fill-current"
                 points="200,380 61,300 100,277 200,334" />
-              <!-- Côté Gauche (Rouge) : Liberté -->
               <polygon id="side-red" onclick="selectSide('red')" class="hexagon-btn text-red-600 fill-current"
                 points="61,100 61,300 100,277 100,123" />
 
-              <!-- Centre neutre -->
               <circle cx="200" cy="200" r="10" class="fill-stone-800" />
             </svg>
           </div>
         </div>
 
-        <!-- DROITE : Terminal d'Affichage Institutionnel -->
         <div class="lg:col-span-7 bg-stone-850 border border-stone-800 min-h-[380px] p-8 flex flex-col justify-between"
           id="content-box">
           <div id="default-instruction"
@@ -178,49 +163,43 @@
     </div>
   </section>
 
-  <!-- CATEGORIES ET DISPOSITIFS TERRAIN -->
   <section id="dispositifs" class="max-w-6xl mx-auto py-24 px-6 space-y-12">
     <div class="border-b border-stone-200 pb-4 text-center md:text-left">
       <h2 class="text-2xl font-bold tracking-tight text-stone-900">Déclinaisons opérationnelles des Ateliers</h2>
-      <p class="text-stone-500 text-xs mt-1">Espaces d'apprentissage de l'essence de la démocratie sur les
-        territoires[cite: 1].</p>
+      <p class="text-stone-500 text-xs mt-1">Espaces d'apprentissage de l'essence de la démocratie sur les territoires.
+      </p>
     </div>
 
     <div class="grid md:grid-cols-3 gap-8">
       <div class="bg-white p-8 border border-stone-200 space-y-4">
-        <div class="text-xs font-bold text-stone-400 uppercase tracking-widest">Public : Adultes (+16 ans)[cite: 1]
-        </div>
+        <div class="text-xs font-bold text-stone-400 uppercase tracking-widest">Public : Adultes (+16 ans)</div>
         <h3 class="text-lg font-bold text-stone-950">Les Cafés Citoyens</h3>
         <p class="text-stone-600 text-xs leading-relaxed">Dispositif de 2h au sein de structures d'accueil variées (MJC,
-          Lycées, Collectivités)[cite: 1]. Permet la confrontation bienveillante et l'élaboration de choix collectifs
-          ascendants[cite: 1].</p>
+          Lycées, Collectivités). Permet la confrontation bienveillante et l'élaboration de choix collectifs ascendants.
+        </p>
       </div>
       <div class="bg-white p-8 border border-stone-200 space-y-4">
-        <div class="text-xs font-bold text-stone-400 uppercase tracking-widest">Public : Jeunes (11-15 ans)[cite: 1]
-        </div>
+        <div class="text-xs font-bold text-stone-400 uppercase tracking-widest">Public : Jeunes (11-15 ans)</div>
         <h3 class="text-lg font-bold text-stone-950">Les Ateliers d'Éveil Citoyen</h3>
         <p class="text-stone-600 text-xs leading-relaxed">Modules de 1h30 à 2h dispensés en collèges et structures de
-          loisirs[cite: 1]. Axés sur la structuration de la pensée individuelle et le respect de la singularité
-          d'autrui[cite: 1].</p>
+          loisirs. Axés sur la structuration de la pensée individuelle et le respect de la singularité d'autrui.</p>
       </div>
       <div class="bg-white p-8 border border-stone-200 space-y-4">
-        <div class="text-xs font-bold text-stone-400 uppercase tracking-widest">Public : Enfance (7-11 ans)[cite: 1]
-        </div>
+        <div class="text-xs font-bold text-stone-400 uppercase tracking-widest">Public : Enfance (7-11 ans)</div>
         <h3 class="text-lg font-bold text-stone-950">Les Goûters Citoyens</h3>
-        <p class="text-stone-600 text-xs leading-relaxed">Séances de 1h au sein des écoles primaires[cite: 1]. Première
-          initiation pratique aux logiques de recherche collective de l'intérêt général[cite: 1].</p>
+        <p class="text-stone-600 text-xs leading-relaxed">Séances de 1h au sein des écoles primaires. Première
+          initiation pratique aux logiques de recherche collective de l'intérêt général.</p>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER OFFICIEL -->
   <footer class="bg-stone-900 text-stone-400 py-16 px-6 border-t border-stone-950 text-xs">
     <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 items-start">
       <div class="space-y-3">
         <p class="font-bold text-white uppercase tracking-wider text-xs">Secrétariat National</p>
-        <p class="font-medium text-stone-300">Association Formation Arcadienne (AFA)[cite: 1]</p>
-        <p>30 Place Henri de Gorsse, 81000 ALBI[cite: 1]</p>
-        <p class="text-stone-500">SIRET : 797 712 007 00013 — Code APE : 9499Z[cite: 1]</p>
+        <p class="font-medium text-stone-300">Association Formation Arcadienne (AFA)</p>
+        <p>30 Place Henri de Gorsse, 81000 ALBI</p>
+        <p class="text-stone-500">SIRET : 797 712 007 00013 — Code APE : 9499Z</p>
       </div>
       <div class="space-y-3">
         <p class="font-bold text-white uppercase tracking-wider text-xs">Liaisons & Réseaux</p>
@@ -232,59 +211,58 @@
       <div class="space-y-3 md:text-right">
         <p class="font-bold text-white uppercase tracking-wider text-xs">Ressources en ligne</p>
         <p>Courriel général : <a href="mailto:imaginelavenir@gmail.com"
-            class="hover:underline">imaginelavenir@gmail.com</a>[cite: 2]</p>
+            class="hover:underline">imaginelavenir@gmail.com</a></p>
         <p>Registre public : <a href="http://www.imaginelavenir.fr" target="_blank"
-            class="text-white hover:underline font-medium">www.imaginelavenir.fr</a>[cite: 2]</p>
+            class="text-white hover:underline font-medium">www.imaginelavenir.fr</a></p>
       </div>
     </div>
     <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-stone-800 text-center text-stone-500 text-[10px]">
-      <p>© 2026 Programme KANT — Plateforme d'Administration Citoyenne. Loi 1901[cite: 1].</p>
+      <p>© 2026 Programme KANT — Plateforme d'Administration Citoyenne. Loi 1901.</p>
     </div>
   </footer>
 
-  <!-- INTERACTIVE JAVASCRIPT -->
   <script>
     const kantData = {
       orange: {
         title: "La Conservation",
         value: "Conservation & Pérennité",
-        function: `Le Conservateur veille à la préservation des êtres, des activités, des ressources et de l'environnement naturel. Il inscrit l'action humaine dans le temps long[cite: 2].`,
-        phase: `Phase 4 - L'Expertise : Le citoyen sait précisément intervenir afin de préserver les constituants de l'atelier, les processus et protéger les patrimoines[cite: 2].`,
+        function: `Le Conservateur veille à la préservation des êtres, des activités, des ressources et de l'environnement naturel. Il inscrit l'action humaine dans le temps long.`,
+        phase: `Phase 4 - L'Expertise : Le citoyen sait précisément intervenir afin de préserver les constituants de l'atelier, les processus et protéger les patrimoines.`,
         colorClass: "bg-orange-500"
       },
       yellow: {
         title: "Le Secrétariat",
         value: "Laïcité (Anti-dogmatisme)",
-        function: `Le Secrétaire assure une circulation neutre, factuelle et transparente de l'information, protégeant l'Atelier de toute dérive dogmatique ou partisane[cite: 2].`,
-        phase: `Phase 3 - La Maîtrise : Capacité de collecter, traiter et diffuser les données structurelles pertinentes de manière transparente[cite: 2].`,
+        function: `Le Secrétaire assure une circulation neutre, factuelle et transparente de l'information, protégeant l'Atelier de toute dérive dogmatique ou partisane.`,
+        phase: `Phase 3 - La Maîtrise : Capacité de collecter, traiter et diffuser les données structurelles pertinentes de manière transparente.`,
         colorClass: "bg-amber-400"
       },
       green: {
         title: "L'Intendance",
         value: "Fraternité (Éthique du soin)",
-        function: `L'Intendant prend soin des personnes, des ressources, des biens et du cadre matériel nécessaire à l'activité exercée au sein de l'atelier[cite: 2].`,
-        phase: `Phase 2 - L'Apprentissage : Intégration des compétences, des connaissances et des comportements requis pour la réalisation logistique de l'activité[cite: 2].`,
+        function: `L'Intendant prend soin des personnes, des ressources, des biens et du cadre matériel nécessaire à l'activité exercée au sein de l'atelier.`,
+        phase: `Phase 2 - L'Apprentissage : Intégration des compétences, des connaissances et des comportements requis pour la réalisation logistique de l'activité.`,
         colorClass: "bg-green-500"
       },
       blue: {
         title: "La Participation",
         value: "Égalité (Singularité)",
-        function: `Le Participant incarne la reconnaissance de la singularité de chaque être humain. Il rend possible l'existence de l'Atelier[cite: 2].`,
-        phase: `Phase 1 - La Découverte : Observation de l'activité, de ses acteurs, de son cadre d'exercice, de son orientation générale et de sa finalité[cite: 2].`,
+        function: `Le Participant incarne la reconnaissance de la singularité de chaque être humain. Il rend possible l'existence de l'Atelier.`,
+        phase: `Phase 1 - La Découverte : Observation de l'activité, de ses acteurs, de son cadre d'exercice, de son orientation générale et de sa finalité.`,
         colorClass: "bg-blue-600"
       },
       purple: {
         title: "L'Harmonisation",
         value: "Harmonie (Équilibre)",
-        function: `L'Harmonisateur agit avec justesse et mesure pour l'apparition d'un climat propice à la cohérence globale et à l'épanouissement[cite: 2].`,
-        phase: `Phase 6 - L'Intégration : Œuvre d'intégration équilibrée et juste, aussi bien des processus de l'atelier que de leur ensemble avec l'Univers[cite: 2].`,
+        function: `L'Harmonisateur agit avec justesse et mesure pour l'apparition d'un climat propice à la cohérence globale et à l'épanouissement.`,
+        phase: `Phase 6 - L'Intégration : Œuvre d'intégration équilibrée et juste, aussi bien des processus de l'atelier que de leur ensemble avec l'Univers.`,
         colorClass: "bg-purple-600"
       },
       red: {
         title: "L'Animation",
         value: "Liberté (Expression)",
-        function: `L'Animateur coordonne, arbitre et pilote l'ensemble des participants pour la pleine réalisation de leurs fonctions respectives[cite: 2].`,
-        phase: `Phase 5 - L'Invention : Le citoyen construit, crée et invente en pleine conformité avec la tradition de l'atelier d'activité[cite: 2].`,
+        function: `L'Animateur coordonne, arbitre et pilote l'ensemble des participants pour la pleine réalisation de leurs fonctions respectives.`,
+        phase: `Phase 5 - L'Invention : Le citoyen construit, crée et invente en pleine conformité avec la tradition de l'atelier d'activité.`,
         colorClass: "bg-red-600"
       }
     };
