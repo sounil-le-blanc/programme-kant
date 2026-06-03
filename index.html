@@ -19,52 +19,82 @@
       opacity: 1;
       filter: drop-shadow(0 0 8px currentColor);
     }
+
+    /* Effet d'angle diagonal inspiré de la carte de visite */
+    .diagonal-split {
+      background: linear-gradient(135deg, #ffffff 49.9%, #dc2626 50%);
+    }
+
+    @media (max-width: 768px) {
+      .diagonal-split {
+        background: linear-gradient(160deg, #ffffff 45%, #dc2626 45.1%);
+      }
+    }
   </style>
 </head>
 
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+<body class="bg-stone-50 text-stone-800 font-sans antialiased">
 
-  <!-- HERO SECTION -->
-  <header
-    class="bg-gradient-to-r from-slate-900 to-indigo-950 text-white py-20 px-4 text-center relative overflow-hidden">
-    <div class="max-w-4xl mx-auto space-y-6 relative z-10">
-      <p class="text-indigo-400 font-semibold tracking-wider uppercase text-sm">Imagine L'Avenir</p>
-      <h1 class="text-4xl md:text-6xl font-black tracking-tight">Le Programme KANT</h1>
-      <p class="text-xl text-slate-300 max-w-2xl mx-auto font-light">
-        Une modélisation systémique des activités humaines au service des Valeurs de la République et de l'émergence de
-        la Cité des Sciences et des Arts.
-      </p>
-      <div class="pt-4">
-        <a href="methode.html"
-          class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-3 rounded-full shadow-lg transition">
-          Découvrir la Méthode
-        </a>
+  <!-- HERO SECTION - Inspirée de la carte de visite 20260603_200911.jpg -->
+  <header class="diagonal-split min-h-[70vh] flex items-center pt-12 pb-24 px-4 shadow-sm border-b border-stone-200">
+    <div class="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- Côté Gauche (Blanc sur la carte) -->
+      <div class="space-y-6 text-left">
+        <p class="text-red-600 font-bold tracking-widest uppercase text-xs">Imagine L'Avenir</p>
+        <h1 class="text-5xl md:text-7xl font-light tracking-tight text-stone-900">
+          Programme <br><span class="font-bold text-red-600">Kant</span>
+        </h1>
+        <p class="text-lg text-stone-600 max-w-md font-normal leading-relaxed">
+          Une modélisation systémique des activités humaines au service des Valeurs de la République et de l'émergence
+          de la Cité des Sciences et des Arts.
+        </p>
       </div>
+
+      <!-- Côté Droit (Rouge sur la carte) -->
+      <div class="text-white space-y-6 md:pl-12 pt-12 md:pt-0">
+        <div class="border-l-2 border-white/30 pl-4 space-y-2">
+          <p class="text-xs tracking-widest uppercase text-red-200">Initiative Citoyenne</p>
+          <p class="text-2xl font-serif tracking-wide italic">"Redécouvrir l'esprit démocratique par l'action
+            collective."</p>
+        </div>
+        <div class="pt-4">
+          <a href="methode.html"
+            class="inline-block bg-stone-900 hover:bg-stone-800 text-white font-medium px-8 py-3.5 rounded-none tracking-wide shadow-md transition uppercase text-xs">
+            Découvrir la Méthode
+          </a>
+        </div>
+      </div>
+
     </div>
   </header>
 
   <!-- INTRO & VISION -->
-  <section class="max-w-4xl mx-auto py-16 px-4 space-y-8 text-center">
-    <h2 class="text-3xl font-bold text-slate-950">Un autre regard sur le monde : La Démognotie</h2>
-    <p class="text-lg text-slate-600 leading-relaxed">
+  <section class="max-w-4xl mx-auto py-20 px-4 space-y-8 text-center">
+    <h2 class="text-3xl font-bold text-stone-900 tracking-tight">Un autre regard sur le monde : La Démognotie</h2>
+    <p class="text-lg text-stone-600 leading-relaxed max-w-3xl mx-auto">
       Né de l'expérimentation des Ateliers d'Expression Citoyenne, le <strong>Programme KANT</strong> est un outil
       d'observation, de compréhension et d'action. Il propose une transition vers un système <em>démognostique</em>, où
       la connaissance et le savoir décisionnel cessent d'être le privilège d'une élite pour devenir un bien commun
       partagé.
     </p>
     <blockquote
-      class="border-l-4 border-indigo-600 bg-indigo-50/50 p-6 rounded-r-xl italic text-slate-700 max-w-2xl mx-auto text-left">
+      class="border-l-4 border-red-600 bg-stone-100 p-6 italic text-stone-700 max-w-2xl mx-auto text-left shadow-xs">
       "Aie le courage de te servir de ton propre entendement." <br>
-      <span class="text-sm font-semibold non-italic text-slate-500">— Emmanuel Kant, 1784</span>
+      <span class="text-sm font-semibold non-italic text-stone-500">— Emmanuel Kant, 1784</span>
     </blockquote>
   </section>
 
   <!-- INTERACTIVE METHOD SECTION (THE HEXAGON) -->
-  <section id="methode" class="bg-slate-900 text-white py-20 px-4 shadow-inner">
-    <div class="max-w-6xl mx-auto text-center space-y-12">
+  <section id="methode" class="bg-stone-900 text-white py-20 px-4 shadow-xl relative overflow-hidden">
+    <!-- Subtile touche rouge de rappel en arrière-plan -->
+    <div class="absolute top-0 right-0 w-32 h-32 bg-red-600/10 rounded-bl-full"></div>
+
+    <div class="max-w-6xl mx-auto text-center space-y-12 relative z-10">
       <div class="space-y-4">
-        <h2 class="text-3xl md:text-4xl font-bold">L'Atelier Hexagonal</h2>
-        <p class="text-slate-400 max-w-xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-light tracking-tight">L'Atelier <span
+            class="font-bold text-red-500">Hexagonal</span></h2>
+        <p class="text-stone-400 max-w-xl mx-auto text-sm">
           Cliquez sur l'un des 6 côtés colorés du logo pour explorer les fonctions et les phases de l'évolution
           citoyenne.
         </p>
@@ -75,8 +105,7 @@
 
         <!-- GAUCHE : L'Hexagone SVG interactif remplaçant le visuel "Hexagone KANT.jpg" -->
         <div class="flex justify-center justify-items-center">
-          <div class="relative w-full max-w-[380px] aspect-square">
-            <!-- Utilisation d'un SVG calqué sur "Hexagone KANT.jpg" pour rendre les segments cliquables proprement -->
+          <div class="relative w-full max-w-[350px] aspect-square">
             <svg viewBox="0 0 400 400" class="w-full h-full drop-shadow-2xl">
               <!-- Côté Haut-Gauche (Orange) : Conservation -->
               <polygon id="side-orange" onclick="selectSide('orange')" class="hexagon-btn text-orange-500 fill-current"
@@ -99,39 +128,39 @@
 
               <!-- Texte Central indicatif -->
               <text x="200" y="210" text-anchor="middle"
-                class="fill-slate-400 text-xs tracking-widest font-semibold uppercase">Méthode KANT</text>
+                class="fill-stone-400 text-xs tracking-widest font-semibold uppercase">Méthode KANT</text>
             </svg>
           </div>
         </div>
 
         <!-- DROITE : Affichage dynamique du contenu -->
         <div
-          class="text-left bg-slate-800 p-8 rounded-2xl border border-slate-700 min-h-[400px] flex flex-col justify-between transition-all"
+          class="text-left bg-stone-800 p-8 rounded-none border-l-4 border-red-600 min-h-[400px] flex flex-col justify-between transition-all shadow-lg"
           id="content-box">
           <div id="default-instruction"
-            class="h-full flex items-center justify-center text-center text-slate-400 italic">
+            class="h-full flex items-center justify-center text-center text-stone-400 italic text-sm">
             Sélectionnez un côté de l'hexagone pour afficher les détails du pilier de la méthode.
           </div>
           <div id="content-display" class="hidden space-y-6">
             <div class="flex items-center space-x-3">
-              <span id="content-badge" class="w-4 h-4 rounded-full"></span>
-              <h3 id="content-title" class="text-2xl font-bold"></h3>
+              <span id="content-badge" class="w-3 h-3 rounded-none rotate-45"></span>
+              <h3 id="content-title" class="text-xl font-bold tracking-tight"></h3>
             </div>
 
             <div>
-              <h4 class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Valeur Républicaine & Principe
+              <h4 class="text-[10px] font-bold uppercase tracking-widest text-red-400">Valeur Républicaine & Principe
               </h4>
-              <p id="content-value" class="text-lg text-slate-200 mt-1"></p>
+              <p id="content-value" class="text-base text-stone-200 mt-1 font-medium"></p>
             </div>
 
             <div>
-              <h4 class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Fonction de l'Atelier</h4>
-              <p id="content-function" class="text-slate-300 mt-1"></p>
+              <h4 class="text-[10px] font-bold uppercase tracking-widest text-red-400">Fonction de l'Atelier</h4>
+              <p id="content-function" class="text-stone-300 text-sm mt-1 leading-relaxed"></p>
             </div>
 
             <div>
-              <h4 class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Phase du Parcours Citoyen</h4>
-              <p id="content-phase" class="text-slate-300 mt-1"></p>
+              <h4 class="text-[10px] font-bold uppercase tracking-widest text-red-400">Phase du Parcours Citoyen</h4>
+              <p id="content-phase" class="text-stone-300 text-sm mt-1 leading-relaxed"></p>
             </div>
           </div>
         </div>
@@ -141,47 +170,58 @@
   </section>
 
   <!-- LES GRANDS AXES / INFOS PRATIQUES -->
-  <section class="max-w-6xl mx-auto py-20 px-4 grid md:grid-cols-3 gap-8">
-    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 space-y-3">
-      <div class="text-3xl">☕</div>
-      <h3 class="text-xl font-bold text-slate-900">Les Cafés Citoyens</h3>
-      <p class="text-slate-600 text-sm">Destinés aux jeunes et adultes dès 16 ans. Un espace de débat de 2h en MJC,
+  <section class="max-w-6xl mx-auto py-24 px-4 grid md:grid-cols-3 gap-8">
+    <div class="bg-white p-8 rounded-none border border-stone-200 border-t-4 border-t-red-600 space-y-4 shadow-xs">
+      <div class="text-2xl text-red-600">☕</div>
+      <h3 class="text-lg font-bold text-stone-900 uppercase tracking-tight">Les Cafés Citoyens</h3>
+      <p class="text-stone-600 text-xs leading-relaxed">Destinés aux jeunes et adultes dès 16 ans. Un espace de débat de
+        2h en MJC,
         lycées ou municipalités pour s'exercer à la démocratie directe.</p>
     </div>
-    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 space-y-3">
-      <div class="text-3xl">☀️</div>
-      <h3 class="text-xl font-bold text-slate-900">Les Ateliers d'Éveil</h3>
-      <p class="text-slate-600 text-sm">Pour les collégiens de 11 à 15 ans. Séances de 1h30 à 2h favorisant l'écoute
+    <div class="bg-white p-8 rounded-none border border-stone-200 border-t-4 border-t-stone-400 space-y-4 shadow-xs">
+      <div class="text-2xl text-stone-500">☀️</div>
+      <h3 class="text-lg font-bold text-stone-900 uppercase tracking-tight">Les Ateliers d'Éveil</h3>
+      <p class="text-stone-600 text-xs leading-relaxed">Pour les collégiens de 11 à 15 ans. Séances de 1h30 à 2h
+        favorisant l'écoute
         respectueuse, l'argumentation et la tolérance des opinions contraires.</p>
     </div>
-    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 space-y-3">
-      <div class="text-3xl">🍰</div>
-      <h3 class="text-xl font-bold text-slate-900">Les Goûters Citoyens</h3>
-      <p class="text-slate-600 text-sm">Pour les enfants des écoles primaires de 7 à 11 ans (durée 1h). Initier dès le
+    <div class="bg-white p-8 rounded-none border border-stone-200 border-t-4 border-t-stone-900 space-y-4 shadow-xs">
+      <div class="text-2xl text-stone-900">🍰</div>
+      <h3 class="text-lg font-bold text-stone-900 uppercase tracking-tight">Les Goûters Citoyens</h3>
+      <p class="text-stone-600 text-xs leading-relaxed">Pour les enfants des écoles primaires de 7 à 11 ans (durée 1h).
+        Initier dès le
         plus jeune âge au partage d'idées et à la recherche de l'intérêt général.</p>
     </div>
   </section>
 
-  <!-- FOOTER / CONTACT -->
-  <footer class="bg-slate-950 text-slate-400 py-12 px-4 border-t border-slate-900 text-sm">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+  <!-- FOOTER / CONTACT - Coordonnées basées sur la carte Thomas Brun -->
+  <footer class="bg-stone-950 text-stone-400 py-16 px-4 border-t border-stone-900 text-xs">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 items-start">
       <div class="space-y-2">
-        <p class="font-bold text-white">Association Imagine L'Avenir / AFA</p>
+        <p class="font-bold text-white uppercase tracking-wider text-sm">Structure</p>
+        <p class="font-medium text-stone-300">Association Imagine L'Avenir / AFA</p>
         <p>Hôtel de Gorsse, 30 Place Henri de Gorsse, 81000 ALBI</p>
         <p>SIRET : 797 712 007 00013 — Association Loi 1901</p>
       </div>
-      <div class="md:text-right space-y-2">
-        <p>Contact : <a href="mailto:imaginelavenir@gmail.com"
-            class="text-white hover:underline">imaginelavenir@gmail.com</a></p>
+      <div class="space-y-2">
+        <p class="font-bold text-white uppercase tracking-wider text-sm">Contact Réseau</p>
+        <p>Téléphone : <span class="text-stone-300">06 61 82 62 04</span></p>
+        <p>Email : <a href="mailto:tbrun@cafes-citoyens.fr"
+            class="text-red-400 hover:underline">tbrun@cafes-citoyens.fr</a></p>
+        <p>Ancrage : ALBI - MOULARES - PARIS</p>
+      </div>
+      <div class="space-y-2 md:text-right">
+        <p class="font-bold text-white uppercase tracking-wider text-sm">Plateforme</p>
+        <p>Email Générique : <a href="mailto:imaginelavenir@gmail.com"
+            class="hover:underline">imaginelavenir@gmail.com</a></p>
         <p>Site web : <a href="http://www.imaginelavenir.fr" target="_blank"
-            class="text-white hover:underline">www.imaginelavenir.fr</a></p>
+            class="text-white hover:underline font-medium">www.imaginelavenir.fr</a></p>
       </div>
     </div>
   </footer>
 
   <!-- INTERACTIVE JAVASCRIPT -->
   <script>
-    // Extraction exacte des données du document client pour alimenter l'hexagone
     const kantData = {
       orange: {
         title: "La Conservation",
@@ -207,7 +247,7 @@
       blue: {
         title: "La Participation",
         value: "Égalité (Singularité & Présence)",
-        function: "Le Participant incarne la reconnaissance de la singularité de chaque être humain. Par sa présence et son action propre, il rend possible l'existence de l'Atelier et l'individuation.",
+        function: "Le Participant incarne la reconnaissance de la singularité de chaque être humain. Par sa présence and son action propre, il rend possible l'existence de l'Atelier et l'individuation.",
         phase: "Phase 1 - La Découverte : Un citoyen vient participer à une activité pour découvrir ses acteurs, son cadre général, son orientation et sa finalité.",
         colorClass: "bg-blue-600"
       },
@@ -228,20 +268,16 @@
     };
 
     function selectSide(color) {
-      // Désactiver l'état actif de tous les boutons de l'hexagone
       document.querySelectorAll('.hexagon-btn').forEach(btn => btn.classList.remove('active'));
-
-      // Activer le bouton cliqué
       document.getElementById(`side-${color}`).classList.add('active');
 
-      // Afficher les données correspondantes
       const data = kantData[color];
       document.getElementById('default-instruction').classList.add('hidden');
 
       const display = document.getElementById('content-display');
       display.classList.remove('hidden');
 
-      document.getElementById('content-badge').className = `w-4 h-4 rounded-full ${data.colorClass}`;
+      document.getElementById('content-badge').className = `w-3 h-3 rounded-none rotate-45 ${data.colorClass}`;
       document.getElementById('content-title').innerText = data.title;
       document.getElementById('content-value').innerText = data.value;
       document.getElementById('content-function').innerText = data.function;
